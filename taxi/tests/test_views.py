@@ -80,12 +80,12 @@ class PrivateTest(TestCase):
         get_user_model().objects.create_user(
             license_number="ABC12345",
             username="test123",
-            password="<PASSWORD>",
+            password="test12345",
         )
         get_user_model().objects.create_user(
             license_number="ABC12346",
             username="test1234",
-            password="<PASSWORD>1",
+            password="test12346",
         )
         user = get_user_model().objects.all()
         response = self.client.get(DRIVER_URL)

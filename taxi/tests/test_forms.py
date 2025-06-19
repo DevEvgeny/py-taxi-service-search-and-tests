@@ -35,7 +35,7 @@ class FormTests(TestCase):
 
     def test_search_form(self):
         form_data = {
-            "model": "Test",
+            "param": "Test",
         }
         form = SearchForm(data=form_data)
         self.assertTrue(form.is_valid())
