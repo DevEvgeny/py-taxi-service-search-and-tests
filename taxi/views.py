@@ -6,7 +6,10 @@ from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Driver, Car, Manufacturer
-from .forms import SearchForm, DriverLicenseUpdateForm, DriverCreationForm, CarForm
+from .forms import (SearchForm,
+                    DriverLicenseUpdateForm,
+                    DriverCreationForm,
+                    CarForm)
 
 
 @login_required
